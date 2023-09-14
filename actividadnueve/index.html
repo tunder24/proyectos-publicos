@@ -1,0 +1,65 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ejercicio 1 </title>
+    <script>
+        function mostrarNombre() {
+            var nombre = document.getElementById("nombre").value;
+            document.write("Hola, " + nombre + ". Tienes " + document.getElementById("edad").value + " años.");
+        }
+
+        function realizarOperaciones() {
+        // Paso 1: Solicitar al usuario que ingrese cuatro números.
+        let num1 = parseFloat(prompt("Ingresa el primer número:"));
+        let num2 = parseFloat(prompt("Ingresa el segundo número:"));
+        let num3 = parseFloat(prompt("Ingresa el tercer número:"));
+        let num4 = parseFloat(prompt("Ingresa el cuarto número:"));
+
+        // Paso 2: Calcular la suma de los dos primeros números.
+        let suma = num1 + num2;
+
+        // Paso 3: Calcular el producto del tercer y cuarto número.
+        let producto = num3 * num4;
+
+        // Mostrar el resultado en el HTML en lugar de usar alert()
+        document.getElementById('resultadoSuma').textContent = suma;
+        document.getElementById('resultadoProducto').textContent = producto;
+    }
+    </script>
+</head>
+<body>
+    <p>Introduce tu nombre y tu edad:</p>
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="number" id="edad" placeholder="Edad">
+    <button onclick="mostrarNombre()">Mostrar</button>
+    
+    <!-- Botón para iniciar el proceso -->
+<button onclick="realizarOperaciones()">Ingresar Números y Calcular</button>
+
+<!-- Contenedores para mostrar los resultados -->
+<div>
+    <strong>Suma de los dos primeros números:</strong>
+    <span id="resultadoSuma"></span>
+</div>
+<div>
+    <strong>Producto del tercer y cuarto número:</strong>
+    <span id="resultadoProducto"></span>
+</div>
+
+
+
+
+<!--ESTRUCTURAS SECUENCIALES  DE PROGRAMACION: EJERCICIO 4-->
+
+
+
+
+
+
+
+
+</body>
+</html>
